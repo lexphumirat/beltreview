@@ -15,7 +15,7 @@
             <div class="col">
 
 
-            <form class="" action="/" method="post">
+            <form class="" action="/" method="POST">
                 {% csrf_token %}
                 <div class="form-group">
                 <label>Name:</label>
@@ -27,11 +27,13 @@
                 <label>Password:</label>
                 <input type="text" class="form-control" name="password" value=""><br>
                 <label>Confirm:</label>
-                <input type="text" class="form-control" name="confirmpw" value="">
+                <input type="text" class="form-control" name="confirmpw" value=""><br>
+                <input type="submit" name="" value="Register">
                 </div>
+            </form>
             </div>
             <div class="col">
-            <form class="" action="/" method="post">
+            <form class="" action="/addbook" method="POST">
                 {% csrf_token %}
                 Email Login: <input type="text" class="form-control" name="loginemail" value=""><br>
                 Password: <input type="text" class="form-control" name="loginpassword" value=""><br>
